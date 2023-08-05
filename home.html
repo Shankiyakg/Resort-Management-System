@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Staybnb Food Ordering System</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="foodstyle.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+</style>
+<body>
+<!-- Start Content -->
+<div id="home">
+
+<!-- Navbar (Sits on top) -->
+<div class="topnav">
+<a href="#home" class="active">HOME</a>
+<a href="#menu" >MENU</a>
+<a href="#about" >ABOUT</a>
+<a href="#checkout" >CHECKOUT</a>
+</div>
+  
+<!-- Header image -->
+<div style="height:800px;background-image:url('pic1.webp');background-size:cover">
+<div>
+  <span class="open">Open from 10am to 12pm</span>
+</div>
+<div class="p2">
+  <span class="p3">Flavors of India</span>
+  <p><a href="#menu" class="btn_menu">Let me see the menu</a></p>
+</div>
+</div>
+
+<!-- Menu -->
+<div>
+<h1 id="menu">MENU</h1>
+<div class="menu">
+<a href="#pizza" class="active">Pizza</a>
+<a href="#pasta">Pasta</a>
+<a href="#starters">Starters</a>
+</div>
+<br>
+<div id="pizza" class="pizza">
+<h1 class="ptype1"><b>Margherita</b> <div class="price">$12.50</div></h1>
+<img src="pizza1.jpg" style="width:20%" alt="Restaurant">
+<p class="ingred_1">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+<hr>
+<h1 class="ptype1"><b>Formaggio</b> <div class="price">$15.50</div></h1>
+<img src="pizza2.jpg" style="width:20%" alt="Restaurant">
+<p class="ingred_1">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+<hr>
+<h1 class="ptype1"><b>Meat Town</b> <div class="price">$20.00</div></h1>
+  <img src="pizza3.jpg" style="width:20%" alt="Restaurant">
+
+<p class="ingred_1">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+
+
+  <h1 id="pasta" class="pasta">PASTA</h1>
+  <h1 class="ptype1"><b>Lasagna</b> <div class="price">$13.50</div></h1>
+  <img src="pasta1.jpg" style="width:20%" alt="Restaurant">
+  <p class="ingred_1">Special sauce, mozzarella, parmesan, ground beef</p>
+  <hr>
+  <h1 class="ptype1"><b>Ravioli</b> <div class="price">$14.50</div></h1>
+  <img src="pasta2.jpg" style="width:20%" alt="Restaurant">
+  <p class="ingred_1">Ravioli filled with cheese</p>
+  <hr>
+  <h1 class="ptype1"><b>Spaghetti Classica</b>
+  <div class="price">$11.00</div></h1>
+  <img src="pasta3.jpg" style="width:20%" alt="Restaurant">
+  <p class="ingred_1">Fresh tomatoes, onions, ground beef</p>
+  
+    <h1 id="starters" class="starters">STARTERS</h1>
+    <h1 class="ptype1"><b>Today's Soup</b><div class="price">$12.50</div></h1>
+    <img src="soup1.jpg" style="width:20%" alt="Restaurant">
+    <p class="ingred_1">Ask the waiter</p>
+    <hr>
+    <h1 class="ptype1"><b>Bruschetta</b> <div class="price">$8.50</div></h1>
+    <img src="bc.jpg" style="width:20%" alt="Restaurant">
+    <p class="ingred_1">Bread with pesto, tomatoes, onion, garlic</p>
+    <hr>
+    <h1 class="ptype1"><b>Garlic bread</b> 
+    <div class="price">$9.50</div></h1>
+    <img src="gb.jpg" style="width:20%" alt="Restaurant">
+    <p class="ingred_1">Grilled ciabatta, garlic butter, onions</p>
+  </div>
+
+
+<!-- About -->
+<div id="about" class="about1">
+<h1 class="about2">About</h1>
+<p>
+  This platform connects customers in the resort to order the food items from the comfort of their rooms and delivered at the doorsteps of their 
+  rooms. Customers use our platform to order food from the wide range of menu available and pay for it when they receive the order.
+  We also operate a one-stop procurement solution, Hyperpure, which supplies high quality ingredients and kitchen products in our resort kitchen.
+</p>
+<center><h1><b>Opening Hours</b></h1>
+  <div class="timing">
+    <p style="font-size:30px">24 &times 7 OPEN!!!</p>
+  </div>
+</center>
+
+<p>
+<img src="pic3.jpg" style="width:100%" alt="Restaurant">
+</p>
+
+</div>
+</div>
+
+<!-- Contact -->
+<div id="checkout" class="chkout">CHECKOUT</div>
+<center>
+<form action="#">
+  <fieldset style="width:50%;" class="f1">
+  <br>
+  <label for="name" class="l1">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input class="fbox" id="name" name="name" type="text" placeholder="Enter the Name">
+  <br><br>
+  <label for="phno" class="l1">Phone number:</label>
+  <input class="fbox" id="phno" name="phno" type="text" placeholder="Enter the Phone number">
+  <br><br>
+  <label for="email" class="l1">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input class="fbox" id="badd" name="badd" type="text" placeholder="Enter the E-mail address">
+  <br><br>
+  <label for="badd" class="l1">Billing Address:</label>
+  <input class="fbox" id="badd" name="badd" type="text" value="Stay bnb,Goa" readonly>
+  <br><br>
+  <label for="room" class="l1">Room No:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input class="fbox" id="room" name="room" type="text" placeholder="Enter the room number">
+  <br><br>
+  <input type="checkbox" id="op1" name="op1">
+  <label for="op1">Prefer Cash Only</label><br>
+  <input type="button" value="Submit" class="fbox">
+  
+  <br>
+  <br>
+  </fieldset>
+</form>
+</center>
+<br><br>
+ 
+
+
+</form>
+
+</div>
+
+<!-- End Content -->
+</div>
+</body>
+</html>
